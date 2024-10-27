@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    line-height: 1;
+}
+
+
+.title-why{
+    text-align: center;
+    padding-top: 6rem;  
+}
+.why-booking{
+    display: flex;
+    align-items: center;
+}
+.customer{
+    margin:1.6rem;
+    padding: 5.5rem;
+}
+.rate{
+    margin:1.6rem;
+    padding: 5.5rem;
+}
+.managing{
+    margin:1.6rem;
+    padding: 5.5rem;
+}
+.safety{
+    margin:1.6rem;
+    padding: 5.5rem;
+}
+.icons{
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+picture img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.icons-list-items{
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0 5px;
+    color: #000;
+    font-family: Tajawal, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: -.02em;
+    line-height: 1.24;
+    text-align: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .why-booking{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 563px) {
+    .why-booking{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .icon-customer{
+        justify-content: center;
+    }
+}
+

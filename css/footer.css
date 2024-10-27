@@ -1,0 +1,162 @@
+footer{
+    min-height: 350px;
+    background-color: #222;
+    position: relative;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-items{
+    min-width: 250px;
+    color: #f2f2f2f2;
+    font-family: poppins;
+    padding: 0 2rem;
+}
+
+.footer-items .logo-mogador{
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.footer-items h3{
+    color: #B81515;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer-items h3::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: #B81515;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.footer-items h3:hover::after{
+    width: 30px;
+
+}
+
+.footer-items .social-media-mogador a i{
+    color: gray;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    transition: 0.3s ease;
+}
+
+.footer-items .social-media-mogador a i:hover{
+    transform: scale(1.4);
+    color: #B81515;
+}
+
+.footer-items .links a{
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.footer-items .links a::before{
+    content: "";
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #B81515;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.footer-items .links a:hover::before{
+    opacity: 1;
+}
+
+.footer-items .links a:hover{
+    transform: translateX(-7px);
+    color: #B81515;
+}
+
+.footer-items .details-of-contact{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.footer-items .details-of-contact i{
+    margin-right: 15px;
+}
+
+.footer-content .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-content .form input{
+    background-color: #222;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+}
+
+.form button{
+    padding: 14px 20px; 
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #B81515;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 947px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-items{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-items{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
